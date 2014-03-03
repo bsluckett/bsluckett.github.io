@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OCC Effort Tracker</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Bootstrap -->
+    <link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/retina.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/navbar.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="background-color:white;">
+	<nav class="navbar navbar-default" role="navigation">
+	  <!-- Brand and toggle get grouped for better mobile display -->
+	  <div class="navbar-header">
+	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	      <span class="sr-only">Toggle navigation</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+	    <a class="navbar-main" href="#">OCC Effort Tracker</a>
+	  </div>
+
+	  <!-- Collect the nav links, forms, and other content for toggling -->
+	  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    <ul class="nav navbar-nav" id="navigation-pane">
+	      <li class="active"><a href="http://localhost:8888/Dev/ET/index.php">Home</a></li>
+		  <li><a href="#">History</a></li>
+	      <li><a href="#">Admin</a></li>
+	      <li><a href="#">Reports</a></li>
+	    </ul>
+	    <ul class="nav navbar-nav navbar-right">
+	      <li><a href="#">Logout</a></li>
+	    </ul>
+	  </div><!-- /.navbar-collapse -->
+	</nav>
+ 	<div style="margin:30px; width: 15%; float: left;">
+ 		<ul class="nav nav-pills nav-stacked">
+		  <li class="active"> <a href="#">Close Processing</a> </li>
+		  <li> <a href="#" >Daily Sunrise Call</a></li>
+		  <li><a href="#" >General Admin</a></li>
+		  <li><a href="#" >Incident Management</a></li>
+		  <li><a href="#" >OCC Service Request</a></li>
+		  <li><a href="#">Physical Access</a></li>
+		  <li><a href="#">Queue Management</a></li>
+		</ul>
+ 	</div>
+	<div id="body-container" class="content-width" style="float: left;">
+	
+<div style="position: relative; background-color:#63ADD0; width:300px; margin:0 auto;height: 130px; border-radius: 10px;">
+			<h4 style="position: absolute; margin-left: 40px; margin-top: 10px"><strong>Select a date to log work</strong></h4><br>
+			<div style="position: absolute; margin-left: 15px; margin-top: 20px">
+				<h4 style="display: inline-block;">Start Date:</h4><input type="date" name="Home_Date" style="margin-left:10px">
+			</div>
+			<button type="button" class="btn btn-success" style="background-color:#9BD377; color:#000000; position: absolute; margin-top:65px; right:10px">Submit</button>
+		</div>
+		<div>
+			<div style="margin:0 auto; width: 500px; margin-top: 30px">
+				<!-- <button type="button" class="btn btn-success" style="margin-left:0px">Save</button> -->
+				<div class="panel panel-primary clearfix">
+					<div class="panel-heading clearfix" style="height:50px">
+						<h3 class="panel-title pull-left">Close Reporting</h3>
+					</div>
+					<div style="margin:10px">
+						<div class="checkbox clearfix">
+							<div style="width: 275px;">
+								<label class"pull-left">
+						    		<input type="checkbox"> Attend close review meeting once a month with all the stakeholders
+						   		</label>
+						 	</div>
+							<div style="margin-top:-40px">
+						 		<form class="form-horizontal pull-right"role="form" style="width:100px;">
+						   			<div class="form-group">
+						    			<div class="col-sm-10">
+						      				<input type="text" class="form-control" id="inputTime" placeholder="Time">
+						    			</div>
+									</div>
+						 		</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">Monitoring Close Tracks</h3>
+					</div>
+					<div style="margin:10px">
+						<div class="checkbox clearfix">
+							<div style="width: 275px;">
+								<label class"pull-left">
+						    		<input type="checkbox">Tracks 1-14
+						   		</label>
+						 	</div>
+							<div style="margin-top:-40px">
+						 		<form class="form-horizontal pull-right"role="form" style="width:100px;">
+						   			<div class="form-group">
+						    			<div class="col-sm-10">
+						      				<input type="text" class="form-control" id="inputTime" placeholder="Time">
+						    			</div>
+									</div>
+						 		</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">Close Event Escalation</h3>
+					</div>
+					<div style="margin:10px">
+						<div class="checkbox clearfix">
+							<div style="width: 275px;">
+								<label class"pull-left">
+						    		<input type="checkbox"> OCC monitors all the events and opens Priority 1/2 incidents
+						   		</label>
+						 	</div>
+							<div style="margin-top:-40px">
+						 		<form class="form-horizontal pull-right"role="form" style="width:100px;">
+						   			<div class="form-group">
+						    			<div class="col-sm-10">
+						      				<input type="text" class="form-control" id="inputTime" placeholder="Time">
+						    			</div>
+									</div>
+						 		</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">Close Review Meeting</h3>
+					</div>
+					<div style="margin:10px">
+						<div class="checkbox clearfix">
+							<div style="width: 275px;">
+								<label class"pull-left">
+						    		<input type="checkbox"> Attend close review meeting once a month with all the stake holders
+						   		</label>
+						 	</div>
+							<div style="margin-top:-40px">
+						 		<form class="form-horizontal pull-right"role="form" style="width:100px;">
+						   			<div class="form-group">
+						    			<div class="col-sm-10">
+						      				<input type="text" class="form-control" id="inputTime" placeholder="Time">
+						    			</div>
+									</div>
+						 		</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<div style="margin:30px; float: right; width: 15%;">
+		
+	<div class="panel panel-primary">
+				<div class="panel-heading">
+	    			<h3 class="panel-title">My Stats</h3>
+	  			</div>
+	  			<div style="margin:10px">
+	  				<strong>Close Processing:</strong> 8 hours </br>
+	  				<strong>Daily Sunrise Call:</strong> 8 hours </br>
+	  				<strong>General Admin:</strong> 8 hours </br>
+	  				<strong>Incident Management:</strong> 8 hours </br>
+	  				<strong>Service Request:</strong> 8 hours </br>
+	  				<strong>Physical Access:</strong> 8 hours </br>
+	  				<strong>Queue Management:</strong> 8 hours </br>
+	  				<strong>Total Hours:</strong> 8 hours </br>
+	  			</div>
+			</div>
+	
+	</div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
